@@ -1,0 +1,157 @@
+#App {
+}
+
+#grid {
+  color: #6600cc;
+  padding: 0px 25px 25px 20px;
+}
+
+.col {
+  margin-bottom: 10px
+}
+
+#homeBtn {
+  border-color: #6600CC; 
+}
+
+.page-header {
+    margin-top: 0px;
+    padding: 25px 25px 25px 20px;
+}
+
+.btn:hover {
+  background-color: #6600CC;
+  color:white;
+}
+
+.btn{
+  background-image: none;
+}
+
+.btn-default{
+  text-shadow: none;
+}
+
+.btn-text {
+  padding: 10px;
+}
+
+.btn-artistClick {
+  white-space: normal;
+    background-color: #6600CC;
+    color: white;
+    text-shadow: none;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+h2, .h2 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.img-responsive {
+  max-width: 45px;
+  align-content: center;
+  display: table;
+}
+
+.thumbnail-margin {
+  margin: 10px
+}
+
+#MainContainer {
+  min-height: 100vh;
+  min-width:100%;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#searchContainer {
+  flex: 1 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+}
+
+#searchContainer button {
+ background-color:white;
+}
+
+#searchContainer button:hover {
+  background-color: #6600CC;
+  color:white;
+ }
+
+#suggestedArtistsContainer {
+  color: #6600CC;
+}
+
+.artistDesc {
+  margin: 0 0 10px 5px;
+}
+
+.symbol:after {
+  margin-left: 5px;
+  content: ' \2022';
+}
+
+#matchingArtistsContainer {
+  border: 2px solid #6600CC;
+  margin: 0px 0px 0px 5px;
+}
+
+h1 small {
+  font-size: 40%;
+}
+
+h1 {
+  margin: 0px;
+}
+
+#relatedArtistsContainer {
+  border: 2px dotted #6600CC;
+  margin: 0px 5px 0px 0px;
+}
+
+button.list-group-item {
+  max-height: 100px;
+}
+
+button.list-group-item:hover, .btn-artistClick:hover {
+  background-color: #6600CC;
+  color: white;
+  text-shadow: none;
+}
+
+.hidden { 
+  display: none;
+}
+
+.invert-colors {
+  background-color: #6600CC;
+  color: white;
+}
+
+.row-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.searchBox {
+  border: none;
+  font-size: 14px;
+  height: 40px;
+  color: #6600CC;
+  border: .5px solid #6600CC;
+  border-color:none;
+}
