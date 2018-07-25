@@ -3,18 +3,16 @@ The place that makes finding related artists simple!
 
 # Local Development
 ## Install the API Server Dependencies
-In a terminal at the root-level:
+In a new terminal, run the following command at the root-level:
 ```
 #Initial setup   
 npm install
 ```
 
 ## Install the React UI dependencies
-The React app is configured to proxy backend requests to the local Node server.
-
-In a separate terminal from the API server, start the UI:
+Install the dependencies for the React UI:
 ```
-#Always change directory, first
+#Always change directory, first via
 cd react-ui/
 
 #Initial setup
@@ -22,7 +20,7 @@ npm install
 ```
 
 ## Run the React UI and API Server 
+At the root-level run the following command:
 ```
-#Use concurrently to run both
 npm run dev
 ```
