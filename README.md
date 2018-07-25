@@ -1,8 +1,26 @@
 # Music Magic
 The place that makes finding related artists simple!
 
-## How to View
+## Local Development
+### Install the API Server Dependencies
+In a new terminal, run the following command at the root-level:
+```
+#Initial setup   
+npm install
+```
 
-This project is still in development mode. To see project, run the command:
+### Install the React UI dependencies
+Install the dependencies for the React UI:
+```
+#Always change directory, first via
+cd react-ui/
 
-           npm run dev
+#Initial setup
+npm install
+```
+
+### Run the React UI and API Server 
+At the root-level run the following command to concurrently run the client and server:
+```
+npm run dev
+```
