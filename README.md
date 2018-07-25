@@ -1,8 +1,23 @@
 # Music Magic
 The place that makes finding related artists simple!
 
-## How to View
+# Local Development
+## Run the API Server
+In a terminal:
 
-This project is still in development mode. To see project, run the command:
+# Initial setup
+npm install
 
-           npm run dev
+## Run the React UI
+The React app is configured to proxy backend requests to the local Node server. (See "proxy" config)
+
+In a separate terminal from the API server, start the UI:
+
+# Always change directory, first
+cd react-ui/
+
+# Initial setup
+npm install
+
+# Start the server
+npm start
