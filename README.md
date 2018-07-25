@@ -2,22 +2,27 @@
 The place that makes finding related artists simple!
 
 # Local Development
-## Run the API Server
-In a terminal:
+## Install the API Server Dependencies
+In a terminal at the root-level:
+```
+#Initial setup   
+npm install
+```
 
-```#Initial setup```
-```npm install```
-
-## Run the React UI
-The React app is configured to proxy backend requests to the local Node server. (See "proxy" config)
+## Install the React UI dependencies
+The React app is configured to proxy backend requests to the local Node server.
 
 In a separate terminal from the API server, start the UI:
-
-Always change directory, first
+```
+#Always change directory, first
 cd react-ui/
 
-Initial setup
+#Initial setup
 npm install
+```
 
-Start the server
-npm start
+## Run the React UI and API Server 
+```
+#Use concurrently to run both
+npm run dev
+```
