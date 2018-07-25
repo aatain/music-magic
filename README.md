@@ -4,8 +4,7 @@ The place that makes finding related artists simple!
 # Local Development
 ## Run the API Server
 In a terminal:
-
-# Initial setup
+Initial setup
 npm install
 
 ## Run the React UI
@@ -13,11 +12,11 @@ The React app is configured to proxy backend requests to the local Node server. 
 
 In a separate terminal from the API server, start the UI:
 
-# Always change directory, first
+Always change directory, first
 cd react-ui/
 
-# Initial setup
+Initial setup
 npm install
 
-# Start the server
+Start the server
 npm start
