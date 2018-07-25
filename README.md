@@ -20,7 +20,7 @@ npm install
 ```
 
 ### Run the React UI and API Server 
-At the root-level run the following command:
+At the root-level run the following command to concurrently run the client and server:
 ```
 npm run dev
 ```
