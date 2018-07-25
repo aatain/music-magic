@@ -27,7 +27,6 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/suggestArtists', artistController.checkArtistCollection, (req, res) => {
-    console.log('res.locals.artists',res.locals.artists)
     res.send({ data: res.locals.artists})
 })
 

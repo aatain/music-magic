@@ -16,7 +16,6 @@ class MainContainer extends Component {
     }
 
     handleIconClick = (currentView) => {
-        console.log(currentView);
         let viewOption;
         (currentView === 'Go Back') ? viewOption = 'Recently Matched Artists' : viewOption = 'Go Back';
         this.setState({ ...this.state, viewOption });

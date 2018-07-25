@@ -56,7 +56,6 @@ class EnhancedProvider extends Component {
     }
 
     handleSuggestedClick = el => {
-        console.log('HSC', el)
         let matchedArtists = [el];
         this.setState({
             showSuggestedArtists: false,
@@ -68,7 +67,6 @@ class EnhancedProvider extends Component {
     }
 
     handleArtistClick = async (clickedArtist, type) => {
-        console.log('clicckededd', clickedArtist)
         let relatedArtists, clickedArtistID, matchedArtists, { spotifyID, genres, origin } = clickedArtist;
         let recentClicks = this.state.recentClicks;
         (origin === "RelatedArtists" || origin === "SuggestedArtists") ? matchedArtists = [clickedArtist] : matchedArtists = this.state.matchedArtists

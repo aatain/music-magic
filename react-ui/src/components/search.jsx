@@ -20,7 +20,6 @@ class Search extends React.Component {
     }
 
     checkInput(e) {
-        console.log('HEYYGY')
         let errMessage;
         let value = this.state.value;
         if (value.length > 0) {

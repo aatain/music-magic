@@ -67,19 +67,19 @@ artistController.saveArtistsInfo = (req, res, next) => {
                 Artist.insertMany(artists,
                     { "ordered": false },
                     (err, result) => {
-                        console.log(result)
+                        // console.log(result)
                         if (err) reject(result);    // Because the errors are here as well
                         resolve(result);
                     }
                 )
             );
-            console.log(result);  // Never gets here
+            // console.log(result);  // Never gets here
         } catch (e) {
             console.log(e);
         }
     }
     let results = A();
-    console.log('YAYYYY', results);
+    // console.log(results);
     next();
 };
 
@@ -96,8 +96,6 @@ artistController.getRelatedArtists = (req, res, next) => {
         if (!error && response.statusCode === 200) {
             // use the access token to access the Spotify Web API
             const token = body.access_token;
-            console.log('token', token)
-
             const options = {
                 url: 'https://api.spotify.com/v1/search?',
                 qs: {
@@ -112,7 +110,6 @@ artistController.getRelatedArtists = (req, res, next) => {
             };
 
             request.get(options, function (error, response, body) {
-                console.log('test in server', body)
                 res.locals.artists = body.artists.items;
                 next();
             });
